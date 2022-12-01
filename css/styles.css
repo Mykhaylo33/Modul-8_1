@@ -637,6 +637,25 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-cover-text {
+    position: absolute;
+    top: 0;
+    color: var(--primary-white-color);
+    font-size: 18px;
+    line-height: 1.15;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding-top: 40;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms; linear ;
+    overflow: auto;
+}
+
 .product-content {
     padding: 20px 24px;
 }
