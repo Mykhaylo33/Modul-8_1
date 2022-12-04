@@ -9,6 +9,9 @@
     --team-title-bg: #f5f4fa;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --portfolio-item-bg: #eeeeee;
+
+    --function-duration: 250ms;
+    --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* General styles */
@@ -56,7 +59,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1200px;
-    /* outline: 2px solid red; */
 }
 
 .button {
@@ -120,31 +122,50 @@ body {
 .logo-style {
     color: var(--accent-color);
 }
-
 /* Site navigation */
-
 .site-nav {
     display: flex;
     margin-left: 93px;
-}
-
-.site-nav-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.site-nav-link:hover,
-.site-nav-link:focus {
-    color: var(--accent-color);
 }
 
 .site-nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-/* Contacts navigation */
+.site-nav-link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-text-color);
 
+    transition: var(--function-duration) var(--function-timing);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--accent-color);
+
+    transition: var(--function-duration) var(--function-timing);
+}
+
+.site-nav-link-current{
+    position: relative;
+    color: var(--accent-color);
+}
+
+.site-nav-link-current::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+/* Contacts navigation */
 .contacts-nav {
     display: flex;
     margin-left: auto;
@@ -160,11 +181,15 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .contacts-nav-link:hover,
 .contacts-nav-link:focus {
     color: var(--accent-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .icon-contact {
@@ -214,6 +239,7 @@ body {
 /* Primary button */
 
 .button-primary {
+    display: inline-flex;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
@@ -224,13 +250,18 @@ body {
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus {
     color: var(--primary-white-color);
     background-color: var(--seconadry-accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 /* General section title*/
@@ -305,12 +336,33 @@ body {
     margin-left: auto;
 }
 
-.work-item {
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+.work-thumb {
     position: relative;
 }
 
-.work-item:not(:last-child) {
-    margin-right: 30px;
+.work-image {
+    display: block;
+}
+
+.work-label-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
 }
 
 /* Team section */
@@ -377,12 +429,16 @@ body {
     fill: #afb1b8;
     align-items: center;
     justify-content: center;
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .social-link:hover,
 .social-link:focus {
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 /* client */
@@ -412,16 +468,22 @@ body {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: var(--primary-text-color);
+
+    
 }
 
 .clients-frame {
     fill: var(--primary-text-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .clients-item :hover,
 .clients-item :focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 /*Foter*/
@@ -489,6 +551,8 @@ body {
 .footer-social-item :focus {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .footer-title {
@@ -510,6 +574,8 @@ body {
     fill: var(--primary-white-color);
     align-items: center;
     justify-content: center;
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 /* Portfolio  */
@@ -526,6 +592,8 @@ body {
 
     color: var(--secondary-text-color);
     background-color: var(--team-title-bg);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .button-secondary:hover,
@@ -533,6 +601,8 @@ body {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .filter {
@@ -563,26 +633,7 @@ body {
 
 /* Porfolio product filters */
 
-.button-secondary {
-    display: inline-block;
-    padding-right: 22px;
-    padding-left: 22px;
-    height: 38px;
 
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-
-    color: var(--secondary-text-color);
-    background-color: var(--team-title-bg);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-}
 
 .filter {
     margin-bottom: 50px;
@@ -635,20 +686,8 @@ body {
 
 .product-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-.wrap {
-    position: relative;
-}
-
-.product-cover-text {
-    position: absolute;
-
-    color: var(--primary-white-color);
-    font-size: 18px;
-    line-height: 1.15;
-    background-color: rgba(33, 150, 243, 0.9);
-    padding-top: 40;
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .product-content {
