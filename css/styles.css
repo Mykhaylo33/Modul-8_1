@@ -673,12 +673,12 @@ body {
     transition: var(--function-duration) var(--function-timing);
 }
 
-.product-item :hover,
+/* .product-item :hover,
 .product-item :focus{
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 
 transition: transform var(--function-duration) var(--function-timing);
-}
+} */
 
 
 .product-item:hover .product-thumb,
@@ -707,32 +707,12 @@ transition: transform var(--function-duration) var(--function-timing);
     transition: var(--function-duration) var(--function-timing);
 }
 
-.product-wrap :hover{
-opacity: 1;
-}
+
 
 .product-wrap{
     position: relative;
     overflow: hidden;
     
-}
-
-.product-wrap ::before{
-    display: inline-block;
-position: absolute;
-content: "";
-
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-
-border-top-right-radius: 5px;
-border-top-left-radius: 5px;
-background:var(--accent-color)
-
-transform: translateY(100%);
-transition: transform var(--function-duration) var(--function-timing);
 }
 
 .product-img{
@@ -743,6 +723,8 @@ transition: transform var(--function-duration) var(--function-timing);
 
 .product-thumb{ 
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     padding: 63px 24px;
@@ -751,11 +733,39 @@ transition: transform var(--function-duration) var(--function-timing);
     line-height: 1.56;
 
     color: var(--primary-white-color);
+    background: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
     transition: transform var(--function-duration) var(--function-timing);
     
 }
+
+.product-item:hover .product-thumb,
+.product-item:focus .product-thumb,
+.product-item:hover .product-wrap::before,
+.product-item:focus .product-wrap::before {
+transform: translateY(0);
+transition: transform var(--function-duration) var(--function-timing);
+}
+
+.product-wrap ::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background:var(--accent-color);
+
+    transform: translateY(100%);
+    transition: transform var(--function-duration) var(--function-timing);
+}
+
 
     
 
