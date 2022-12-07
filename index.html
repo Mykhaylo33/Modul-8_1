@@ -26,7 +26,7 @@
                     <!-- nav -->
                     <ul class="list site-nav">
                         <li class="site-nav-item">
-                            <a href="./index.html" class="link site-nav-link site-nav-link-current " aria-current="true">Студія</a>
+                            <a href="./index.html" class="link site-nav-link site-nav-link-current" aria-current="true">Студія</a>
                         </li>
                         <li class="site-nav-item">
                             <a href="./portfolio.html" class="link site-nav-link">Портфоліо</a>
@@ -62,7 +62,7 @@
             <section class="hero overlay">
                 <div class="container hero-container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="button button-primary">Замовити послугу</button>
+                    <button data-modal-open type="button" class="button button-primary">Замовити послугу</button>
                 </div>
             </section>
             <!--Переваги-->
@@ -380,5 +380,16 @@
                 </div>
             </div>
         </footer>
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    <svg class="close-btn" width="20" height="20">
+                        <use href="./images//sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <script src="./scripts/modal.js"></script>
     </body>
 </html>
