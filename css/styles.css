@@ -884,8 +884,6 @@ transition: transform var(--function-duration) var(--function-timing);
 
     display: inline-block;
     fill: #000000;
-
-    background-color: tomato;
 }
 
 .form-input {
