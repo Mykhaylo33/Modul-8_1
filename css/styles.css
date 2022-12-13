@@ -1026,23 +1026,34 @@ transition: transform var(--function-duration) var(--function-timing);
     transition: var(--function-duration) var(--function-timing);
 }
 
-/* .input-container */
-.footer-form-field {
+/* footer-follow */
+.footer-follow {
+    display: flex;
+}
+.follow-next {
     display: block;
-    margin-left: 93px;
 }
 
-.footer-form-input {
-    display: flex;
-    outline: none;
-    margin-left: 0px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 358px;
+.follow {
+    display: block;
+    margin-left: 12px;
+    margin-top: 43px;
+}
 
-    background-color: var(--footer-bg-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+.footer .button {
+    display: flex;
+
+    width: 200px;
+    height: 50px;
     border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87em;
+
+    justify-content: center;
+    align-items: center;
+}
+.send {
+    margin-left: 10px;
 }
