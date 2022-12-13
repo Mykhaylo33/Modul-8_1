@@ -800,6 +800,7 @@ transition: transform var(--function-duration) var(--function-timing);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity var(--function-duration) var(--function-timing);
+    z-index: 999;
 }
 
 .backdrop.is-hidden {
@@ -983,6 +984,8 @@ transition: transform var(--function-duration) var(--function-timing);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    transition: var(--function-duration) var(--function-timing);
 }
 
 .checkbox-label {
@@ -1014,4 +1017,32 @@ transition: transform var(--function-duration) var(--function-timing);
 .conditions {
     color: var(--accent-color);
     margin-left: 5px;
+
+    transition: var(--function-duration) var(--function-timing);
+}
+
+.conditions:hover,
+.conditions:focus {
+    transition: var(--function-duration) var(--function-timing);
+}
+
+/* .input-container */
+.footer-form-field {
+    display: block;
+    margin-left: 93px;
+}
+
+.footer-form-input {
+    display: flex;
+    outline: none;
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 358px;
+
+    background-color: var(--footer-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
