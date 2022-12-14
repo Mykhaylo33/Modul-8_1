@@ -493,12 +493,12 @@ textarea {
 /*Foter*/
 
 .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-bg-color);
 }
 
 .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     align-items: baseline;
 }
@@ -506,7 +506,6 @@ textarea {
 .footer-addres-container {
     display: block;
     flex-direction: column;
-    width: 231px;
 }
 .logo-secondary {
     display: block;
@@ -866,7 +865,7 @@ transition: transform var(--function-duration) var(--function-timing);
 
 .form-title {
     margin-top: 40px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     text-align: center;
     font-size: 20px;
     line-height: 1.15;
@@ -875,13 +874,13 @@ transition: transform var(--function-duration) var(--function-timing);
 }
 
 .form-field {
-    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.form-lable label {
+.form-lable {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
@@ -990,6 +989,7 @@ transition: transform var(--function-duration) var(--function-timing);
 
 .checkbox-label {
     display: flex;
+    margin-top: 20px;
     align-items: center;
     font-weight: 400;
     font-size: 14px;
@@ -1029,46 +1029,48 @@ transition: transform var(--function-duration) var(--function-timing);
 /* footer-follow */
 .subscribe-form {
     position: relative;
-    margin-top: 72px;
+
     margin-left: 93px;
     width: 570px;
     height: 86px;
-  }
-  
+}
+
 .footer-form {
     display: flex;
     flex-direction: column;
-  }
-  
+}
+
 .footer-form input {
     margin: 0;
     padding: 15px 16px;
     width: 358px;
-    height: 50px;
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    font-size: 16px;
+
+    letter-spacing: 0.03em;
     background-color: var(--footer-bg-color);
     color: var(--primary-white-color);
-  }
-  
-  .footer-form label {
+}
+
+.footer-form label {
     margin-bottom: 20px;
+
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: var(--primary-white-color);
-  }
-  
-  .footer-button {
+}
+
+.footer-button {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
-  .submit-footer-button {
+}
+.submit-footer-button {
     width: 200px;
     height: 50px;
     background-color: var(--accent-color);
@@ -1078,22 +1080,17 @@ transition: transform var(--function-duration) var(--function-timing);
     border: none;
     cursor: pointer;
     justify-content: center;
-  
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     display: flex;
     align-items: center;
-  }
-  
-  .submit-footer-button:hover{
-    transition: var(--function-duration) var(--function-timing);
 }
 
-
-  .subscribe-icon {
+.subscribe-icon {
     fill: var(--primary-white-color);
     margin-left: 10px;
     display: block;
-  }
+}
