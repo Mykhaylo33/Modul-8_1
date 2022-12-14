@@ -10,7 +10,7 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --portfolio-item-bg: #eeeeee;
 
-    --function-duration: 750ms;
+    --function-duration: 250ms;
     --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
