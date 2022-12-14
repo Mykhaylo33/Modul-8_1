@@ -1071,8 +1071,7 @@ transition: transform var(--function-duration) var(--function-timing);
     bottom: 0;
 }
 .submit-footer-button {
-    width: 200px;
-    height: 50px;
+    padding: 10px 28px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
