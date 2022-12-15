@@ -247,16 +247,21 @@ textarea {
 
 .button-primary {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 50px;
+
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
     vertical-align: middle;
-    padding: 10px 32px;
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 
     transition: var(--function-duration) var(--function-timing);
 }
@@ -542,7 +547,7 @@ textarea {
 
 .footer-social-container {
     display: block;
-    margin-left: 69px;
+    margin-left: 70px;
 }
 
 .footer-social-list {
@@ -675,13 +680,6 @@ textarea {
 
     transition: var(--function-duration) var(--function-timing);
 }
-
-/* .product-item :hover,
-.product-item :focus{
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-
-transition: transform var(--function-duration) var(--function-timing);
-} */
 
 .product-item:hover .product-thumb,
 .product-item:focus .product-thumb,
@@ -881,7 +879,7 @@ transition: transform var(--function-duration) var(--function-timing);
     position: relative;
 }
 
-.form-lable label {
+.form-lable {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
@@ -990,6 +988,7 @@ transition: transform var(--function-duration) var(--function-timing);
 
 .checkbox-label {
     display: flex;
+    margin-top: 20px;
     align-items: center;
     font-weight: 400;
     font-size: 14px;
@@ -1027,73 +1026,33 @@ transition: transform var(--function-duration) var(--function-timing);
 }
 
 /* footer-follow */
-.subscribe-form {
-    position: relative;
-    margin-top: 72px;
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
-  }
-  
-.footer-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-.footer-form input {
-    margin: 0;
-    padding: 15px 16px;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: var(--footer-bg-color);
+.footer-signup-title {
+    display: block;
+    margin-bottom: 21px;
+
     color: var(--primary-white-color);
-  }
-  
-  .footer-form label {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: var(--primary-white-color);
-  }
-  
-  .footer-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  .submit-footer-button {
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    display: flex;
-    align-items: center;
-  }
-  
-  .submit-footer-button:hover{
-    transition: var(--function-duration) var(--function-timing);
 }
 
+.footer-subscription {
+    display: flex;
+    flex-direction: column;
+    margin-left: 94px;
+}
 
-  .subscribe-icon {
-    fill: var(--primary-white-color);
-    margin-left: 10px;
-    display: block;
-  }
+.footer-email {
+    vertical-align: middle;
+    padding: 18px 12px;
+    margin-right: 8px;
+    width: 358px;
+    height: 50px;
+
+    font-size: 16px;
+    line-height: 1.87;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--footer-text-color);
+    background-color: var(--footer-bg-color);
+}
