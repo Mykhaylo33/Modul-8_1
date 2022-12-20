@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --primary-white-color: #ffffff;
@@ -12,18 +12,18 @@
 
     --function-duration: 250ms;
     --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-/* General styles */
+/* General styles
 html {
     box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 
 body {
     margin: 0;
@@ -35,13 +35,13 @@ body {
 
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
-}
+} */
 
 textarea {
     resize: none;
 }
 
-.list {
+/* .list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -50,7 +50,7 @@ textarea {
 .link {
     text-decoration: none;
     color: var(--secondary-text-color);
-}
+} */
 
 .section {
     padding-top: 94px;
