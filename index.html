@@ -13,7 +13,6 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>goit-markup-hw-07</title>
@@ -23,12 +22,12 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <div class="container header-container">
+      <div class="header__container">
         <nav class="nav">
           <!--logo-->
           <a
             href="./index.html"
-            class="logo logo__primary link"
+            class="logo__primary"
             id="back-to-web"
             aria-current="true">
             <span class="logo__style">Web</span>Studio
@@ -80,7 +79,7 @@
     </header>
     <main class="page-main">
       <!--Герой-->
-      <section class="hero overlay">
+      <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open type="button" class="button button__primary">
@@ -92,8 +91,8 @@
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
           <button type="button" class="close-button" data-modal-close>
-            <svg class="icon-close" width="20" height="20">
-              <use href="./images//sprite.svg#icon-close"></use>
+            <svg class="icon-close-btn" width="20" height="20">
+              <use href="./images//sprite.svg#icon-close" class="use"></use>
             </svg>
           </button>
 
@@ -101,8 +100,8 @@
             <h2 class="form__caption">
               Залиште свої дані, ми вам передзвонимо
             </h2>
-            <div class="form__field">
-              <label class="form__lable" for="name"
+            <div class="form__input-container">
+              <label class="form__field" for="name"
                 >Ім'я
                 <input
                   class="form__input"
@@ -183,18 +182,18 @@
         </div>
       </div>
       <!--Переваги-->
-      <section class="section features-section">
-        <div class="container features-container">
-          <h2 class="visually-hidden">Особливості</h2>
-          <ul class="list features">
+      <section class="features__section">
+        <div class="features__container">
+          <h2 class="features__main-title hidden-label">Особливості</h2>
+          <ul class="list features__list">
             <li class="features__item">
               <div class="icon-features">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="uptitle features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features-text">
+              <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
@@ -205,7 +204,7 @@
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="uptitle features__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -217,7 +216,7 @@
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="uptitle features__title">ПЛАНУВАННЯ</h3>
+              <h3 class="features__title">ПЛАНУВАННЯ</h3>
               <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>

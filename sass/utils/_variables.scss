@@ -1,16 +1,18 @@
-:root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --primary-white-color: #ffffff;
-  --accent-color: #2196f3;
-  --seconadry-accent-color: rgba(24, 140, 232, 1);
-  --hero-bg-color: #c4c4c4;
-  --footer-bg-color: #2f303a;
-  --team-title-bg: #f5f4fa;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
-  --portfolio-item-bg: #eeeeee;
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+$primary-white-color: #ffffff;
+$accent-color: #2196f3;
+$seconadry-accent-color: rgba(24, 140, 232, 1);
+$hero-bg-color: #c4c4c4;
+$footer-bg-color: #2f303a;
+$team-title-bg: #f5f4fa;
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$portfolio-item-bg: #eeeeee;
 
-  --function-duration: 250ms;
-  --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// animations
+$function-duration: 250ms;
+$function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 
+// fonts
+$main-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
