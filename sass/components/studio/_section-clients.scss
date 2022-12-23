@@ -1,5 +1,5 @@
 .clients-list {
-  display: flex;
+  @extend %list;
   color: var(--primary-text-color);
 }
 
