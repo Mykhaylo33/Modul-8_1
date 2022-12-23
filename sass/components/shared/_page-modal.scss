@@ -55,14 +55,14 @@
   background-color: $primary-white-color;
 
   transform: translate(-25%, 25%) scale(1);
-  transition: transform $function-duration $function-timing;
+  transition: transform 
 }
 
 .btn-close:hover,
 .btn-close:focus {
-  fill: var(--accent-color);
+  fill:$accent-color;
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .icon-close-btn {
@@ -94,7 +94,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color:$secondary-text-color;
 }
 
 .form-field {
@@ -120,7 +120,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .form-field input::placeholder {
@@ -148,20 +148,20 @@
   left: 12px;
 
   display: inline-block;
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .form-input:focus ~ .modal-icon,
 .form-input:hover ~ .modal-icon {
   fill: var(--accent-color);
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .form-input:focus,
 .form-input:hover {
   border-color: var(--accent-color);
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .form-label {
@@ -180,14 +180,14 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;;
 }
 
 .comment:hover,
 .comment:focus {
   border-color: var(--accent-color);
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .checkbox {
@@ -211,7 +211,7 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .checkbox-label {
@@ -245,10 +245,10 @@
   color: var(--accent-color);
   margin-left: 5px;
 
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }
 
 .conditions:hover,
 .conditions:focus {
-  transition: var(--function-duration) var(--function-timing);
+  transition: $function-duration $function-timing;
 }

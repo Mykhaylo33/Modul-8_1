@@ -1,0 +1,38 @@
+.clients-list {
+  display: flex;
+  color: var(--primary-text-color);
+}
+
+.clients-item {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients-item :not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-frame {
+  transition: var(--function-duration) var(--function-timing);
+}
+
+.clients-item :hover,
+.clients-item :focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+
+  transition: var(--function-duration) var(--function-timing);
+}
