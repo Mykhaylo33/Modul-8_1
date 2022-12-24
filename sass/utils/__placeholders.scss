@@ -19,6 +19,7 @@
   text-decoration: none;
   color: $secondary-text-color;
 }
+
 %item {
   display: flex;
   flex-direction: column;
@@ -85,4 +86,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $secondary-text-color;
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
