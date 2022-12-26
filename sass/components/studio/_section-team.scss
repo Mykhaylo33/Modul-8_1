@@ -44,6 +44,10 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background: $primary-white-color;
+
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .team-members__name {
@@ -69,42 +73,37 @@
 }
 
 .socials__item {
-  // width: 44px;
-  // height: 44px;
-
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
 .socials__link {
-  @extend %flex-align;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
+  @extend %socials-link;
 
+  fill: $icon-socials-color;
   transition: $function-duration $function-timing;
 
   &:hover,
   &:focus {
+    fill: $primary-white-color;
     background-color: $accent-color;
 
     transition: $function-duration $function-timing;
   }
+
+  // &:hover .icon-socials,
+  // &:focus .icon-socials {
+  //   border-radius: 50%;
+  //   background-color: $accent-color;
+  //   fill: $primary-white-color;
+  //   transition: fill $function-duration $function-timing background-color $function-duration $function-timing;
+  // }
 }
 
-.icon-socials {
-  display: block;
-  fill: $icon-socials-color;
-  transition: fill $function-duration $function-timing;
+// .icon-socials {
+//   display: block;
+//   fill: $icon-socials-color;
 
-  &:hover .icon-socials,
-  &:focus .icon-socials {
-    border-radius: 50%;
-
-    background-color: $accent-color;
-    fill: $primary-white-color;
-
-    transition: $function-duration $function-timing background-color $function-duration $function-timing;
-  }
-}
+//   transition: fill $function-duration $function-timing;
+// }

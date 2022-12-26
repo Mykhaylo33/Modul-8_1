@@ -49,6 +49,13 @@
   display: block;
   margin-left: 69px;
 }
+.socials__link {
+  @extend %socials-link;
+  background-color: $footer-socials-color;
+}
+.ftr-fb-icon {
+  fill: $primary-white-color;
+}
 
 .footer__signup-title {
   @extend %uptitle;
@@ -82,6 +89,6 @@
   background-color: unset;
 }
 
-.icon-plane{
+.icon-plane {
   margin-left: 10px;
 }
