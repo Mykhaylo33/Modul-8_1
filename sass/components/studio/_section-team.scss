@@ -1,5 +1,6 @@
 .team-members__section {
   @extend %section;
+
   background-color: $secondary-bg-color;
 }
 
@@ -20,13 +21,12 @@
 }
 
 .team-members__item {
-  @extend %item;
-
+  display: flex;
+  flex-direction: column;
   width: 270px;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  background-color: $primary-white-color;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -59,8 +59,6 @@
 .team-members__pos {
   margin-top: 0;
   margin-bottom: 16px;
-
-  color: $primary-text-color;
 }
 
 .socials {
@@ -71,8 +69,8 @@
 }
 
 .socials__item {
-  width: 44px;
-  height: 44px;
+  // width: 44px;
+  // height: 44px;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -85,25 +83,28 @@
   width: 44px;
   border-radius: 50%;
 
-  fill: $icon-socials-color;
   transition: $function-duration $function-timing;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
+
     transition: $function-duration $function-timing;
-  }
-  &:hover .icon-socials,
-  &:focus .icon-socials {
-    border-radius: 50%;
-    background-color: $accent-color;
-    fill: $primary-white-color;
-    transition: fill $function-duration $function-timing background-color $function-duration $function-timing;
   }
 }
 
 .icon-socials {
   display: block;
-
+  fill: $icon-socials-color;
   transition: fill $function-duration $function-timing;
+
+  &:hover .icon-socials,
+  &:focus .icon-socials {
+    border-radius: 50%;
+
+    background-color: $accent-color;
+    fill: $primary-white-color;
+
+    transition: $function-duration $function-timing background-color $function-duration $function-timing;
+  }
 }

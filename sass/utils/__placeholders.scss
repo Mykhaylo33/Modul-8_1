@@ -8,6 +8,19 @@
   color: $secondary-text-color;
 }
 
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 %list {
   display: flex;
   list-style: none;
@@ -17,6 +30,9 @@
 
 %link {
   text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+
   color: $secondary-text-color;
 }
 
@@ -28,19 +44,6 @@
 
 %image {
   display: block;
-}
-
-%section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-%container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
 }
 
 %button {
