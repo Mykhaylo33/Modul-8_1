@@ -7,12 +7,7 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Img-overlay.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-overlay.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,32 +35,31 @@
 }
 
 // Primary button in Hero
-.button__primary {
-  @extend %button;
+.button {
+  @extend %hero-button;
+  // display: inline-flex;
+  // align-items: center;
+  // justify-content: center;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // width: 200px;
+  // height: 50px;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 200px;
-  height: 50px;
+  // font-weight: 700;
+  // line-height: 1.87;
+  // letter-spacing: 0.06em;
+  // vertical-align: middle;
 
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  vertical-align: middle;
+  // color: $primary-white-color;
+  // background-color: $accent-color;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  color: $primary-white-color;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  // transition: $function-duration $function-timing;
 
-  transition: $function-duration $function-timing;
+  // &:hover,
+  // &:focus {
+  //   background-color: $seconadry-accent-color;
 
-  &:hover,
-  &:focus {
-    background-color: $seconadry-accent-color;
-
-    transition: $function-duration $function-timing;
-  }
+  //   transition: $function-duration $function-timing;
+  // }
 }

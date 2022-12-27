@@ -1,6 +1,7 @@
 .page-footer {
   @extend %section;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: $footer-bg-color;
 }
 
@@ -60,15 +61,15 @@
 .footer__signup-title {
   @extend %uptitle;
   display: block;
-
+  letter: spacing 0.03em;
   margin-bottom: 20px;
   color: $primary-white-color;
 }
 
 .footer__subscription {
   display: flex;
-  flex-direction: column;
-  margin-left: 70px;
+  vertical-align: middle;
+  margin-left: 93px;
 }
 
 .footer__email {
@@ -87,6 +88,11 @@
 
   color: $footer-text-color;
   background-color: unset;
+}
+
+.footer__button {
+  @extend %footer-button;
+  @extend %button;
 }
 
 .icon-plane {

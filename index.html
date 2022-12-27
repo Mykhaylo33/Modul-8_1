@@ -60,10 +60,10 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button button__primary">Замовити послугу</button>
+          <button data-modal-open type="button" class="button">Замовити послугу</button>
         </div>
       </section>
-      <!-- MODAL -->
+
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
           <button type="button" class="close-button" data-modal-close>
@@ -71,8 +71,9 @@
               <use href="./images//sprite.svg#icon-close" class="use"></use>
             </svg>
           </button>
+          <!-- Modal -->
           <form class="form">
-            <b class="form__caption">Залиште свої дані, ми вам передзвонимо</b>
+            <b class="form__caption"> Залиште свої дані, ми вам передзвонимо</b>
             <div class="form__input-container">
               <div class="form__field">
                 <label class="form__lable" for="name">Ім'я</label>
@@ -101,20 +102,21 @@
                   </svg>
                 </span>
               </div>
-
-              <label class="form__field" for="comment" class="form-label">Коментар</label>
-              <textarea class="form__input comment" name="comment" id="comment" cols="300" rows="5" placeholder="Залишити коментар"></textarea>
+              <div class="form__field">
+                <label class="form__lable" for="comment" class="form-label">Коментар</label>
+                <textarea class="form__input comment" name="comment" id="comment" cols="300" rows="5" placeholder="Залишити коментар"></textarea>
+              </div>
             </div>
             <div class="form__checkbox-container">
               <label class="form__field">
-                <input class="checkbox" type="checkbox" name="policy" />
-                <span class="checkbox-icon">
-                  <svg class="checkbox-icon-unchecked" width="16" height="15">
-                    <use href="./images/sprite.svg#icon-check"></use>
-                  </svg>
+                <input type="checkbox" name="policy" class="form__checkbox" />
+                <span class="icon-checkbox"></span>
+                <span class="form__checkbox-label"
+                  >Погоджуюся з розсилкою та приймаю
+                  <span>
+                    <a href="#" class="policy">Умови договору</a>
+                  </span>
                 </span>
-                Погоджуюся з розсилкою та приймаю
-                <a class="policy" href="#">Умови договору</a>
               </label>
             </div>
             <button type="submit" class="button">Відправити</button>
@@ -173,15 +175,15 @@
           <h2 class="work__main-title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <a href=""><img class="work__img" src="./images/design-solutions.jpg" alt="дизайнерські рішення" width="370" /></a>
+              <img class="work__img" src="./images/design-solutions.jpg" alt="дизайнерські рішення" width="370" />
               <h3 class="work__title">Десктопні додатки</h3>
             </li>
             <li class="work__item">
-              <a href=""><img class="work__img" src="./images/desktop-applications.jpg" alt="настільні додатки" width="370" /></a>
+              <img class="work__img" src="./images/desktop-applications.jpg" alt="настільні додатки" width="370" />
               <h3 class="work__title">Мобільні додатки</h3>
             </li>
             <li class="work__item">
-              <a href=""><img class="work__img" src="./images/mobile-applications.jpg" alt="мобільні додатки" width="370" /></a>
+              <img class="work__img" src="./images/mobile-applications.jpg" alt="мобільні додатки" width="370" />
               <h3 class="work__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -448,7 +450,7 @@
           <label>
             <b class="footer__signup-title">Підпишіться на розсилку</b>
             <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email" />
-            <button type="submit" class="button__primary">
+            <button type="submit" class="footer__button">
               Підписатися
               <svg class="icon-plane" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
