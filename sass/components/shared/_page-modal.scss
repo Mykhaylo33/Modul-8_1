@@ -108,14 +108,6 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
-  .form__input:hover + &,
-  .form__input:focus + &,
-  .form__input:not(:placeholder-shown) + & {
-    color: $accent-color;
-
-    transition: transform $function-duration $function-timing, fill $function-duration $function-timing;
-  }
 }
 
 .icon-input {
