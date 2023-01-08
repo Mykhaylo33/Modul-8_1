@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  // outline: 2px solid red;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  color: black;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 350px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 550px) {
+    width: 550px;
+  }
+
+  @media screen and (min-width: 850px) {
+    width: 850px;
+  }
+}
+
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header {
+  border-bottom: 2px solid black;
+}
+
+.page-header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 500px;
+  color: white;
+
+  background-color: blue;
+}
+
+.feauters {
+  text-align: center;
+  padding-top: 20px;
+
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24;
+  // display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.features-set {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 550px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+
+  @media screen and (min-width: 850px) {
+    margin: -10px;
+  }
+}
+
+.features-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: solid 3px black;
+  background-color: tomato;
+
+  @media screen and (min-width: 550px) {
+    width: calc((100% - 4 * 5px) / 2);
+    margin: 5px;
+  }
+
+  @media screen and (min-width: 850px) {
+    width: calc((100% - 6 * 10px) / 3);
+    margin: 10px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 549px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.feauters-2 {
+  @media screen and (max-width: 549px) {
+    display: none;
+    display: flex;
+  }
+}
+.features-set-2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 550px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features-item-2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  background-color: green;
+  border: solid 3px black;
+
+  @media screen and (min-width: 550px) {
+    width: calc((100% - 6 * 5px) / 3);
+    margin: 5px;
+  }
+
+  @media screen and (min-width: 850px) {
+    width: calc((100% - 6 * 10px) / 3);
+    margin: 10px;
+    font-size: 32px;
+   background-color: blue;
+  }
+}
