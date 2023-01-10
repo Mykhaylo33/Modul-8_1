@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <title>IceCream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="/iTeamChic-IceProject/favicon_32x32.8f87b839.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="/iTeamChic-IceProject/src.6e04c37a.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <header></header> -->
+      <header>
+        <div class="container header__container">
+          <nav class="main-nav">
+            <a class="logo" href="/iTeamChic-IceProject/index.html">
+              <picture>
+                <source
+                  srcset="
+                    /iTeamChic-IceProject/logo1.b0025747.png    1x,
+                    /iTeamChic-IceProject/logo1@2x.cb2874f3.png 2x,
+                    /iTeamChic-IceProject/logo1@3x.1c79cc4d.png 3x
+                  "
+                />
+                <img
+                  class="logo__img"
+                  src="/iTeamChic-IceProject/logo1.b0025747.png"
+                  alt="Логотип"
+                /> </picture
+              >Icecream</a
+            >
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="/iTeamChic-IceProject/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#advantages">About us</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#about">How it’s made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#products">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#contacts">Contact</a>
+              </li>
+            </ul>
+            <div class="header__buttons">
+              <button
+                type="button mobile-nav"
+                class="mobile-nav__btn"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button=""
+              >
+                <svg
+                  class="mobile-nav__icon"
+                  width="14"
+                  height="14"
+                  aria-label="Мобильное меню"
+                >
+                  <use
+                    class="icon-close"
+                    href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-close"
+                  ></use>
+                  <use
+                    class="icon-menu"
+                    href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-burger"
+                  ></use>
+                </svg>
+              </button>
+              <button class="header__btn" data-modal-open="">
+                Buy now
+                <svg class="btn-icon" width="6" height="10">
+                  <use
+                    href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-further"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="backdrop backdrop--hidden backdrop--menu"
+              data-menu-backdrop=""
+            >
+              <div class="site-nav--mobile" data-menu="">
+                <button
+                  class="header__btn--mobile"
+                  type="button"
+                  data-modal-open-mob=""
+                >
+                  Buy now
+                  <svg class="btn-icon" width="6" height="10">
+                    <use
+                      href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-further"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="gradient"></div>
+                <ul class="site-nav__list--mobile">
+                  <li class="site-nav__item--mobile">
+                    <a
+                      class="site-nav__link site-nav__link--current site-nav__link--mobile"
+                      href="/iTeamChic-IceProject/index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="site-nav__item--mobile">
+                    <a
+                      class="site-nav__link site-nav__link--mobile"
+                      href="#advantages"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="site-nav__item--mobile">
+                    <a
+                      class="site-nav__link site-nav__link--mobile"
+                      href="#about"
+                      >How it’s made?</a
+                    >
+                  </li>
+                  <li class="site-nav__item--mobile">
+                    <a
+                      class="site-nav__link site-nav__link--mobile"
+                      href="#products"
+                      >Our products</a
+                    >
+                  </li>
+                  <li class="site-nav__item--mobile">
+                    <a
+                      class="site-nav__link site-nav__link--mobile"
+                      href="#contacts"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- <section class="hero"></section> -->
+      <section class="hero">
+        <div class="container hero__content">
+          <div class="hero__container">
+            <div class="hero_container_info">
+              <ul class="hero__list_number">
+                <li class="hero__item_number">
+                  <div class="hero__round_cafes"></div>
+                  <p class="hero__text_number-16">16</p>
+                  <p class="hero__text_cafes">cafes</p>
+                </li>
+                <li class="hero__item_number">
+                  <div class="hero__round_food"></div>
+                  <p class="hero__text_number-23">23</p>
+                  <p class="hero__text_food">food trucks</p>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__container_title">
+              <h1 class="animate__bounceIn animate__delay-3s hero__title">
+                ice cream made with <span class="hero__title_red">passion</span>
+              </h1>
+              .
+              <ul class="hero__list_button">
+                <li class="hero__item_button">
+                  <form action="#products">
+                    <button class="hero__button_products">Products</button>
+                  </form>
+                </li>
+                <li class="hero__item_button">
+                  <form action="#about">
+                    <button class="hero__button_made">How it’s made?</button>.
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="animate__bounceIn animate__delay-3s hero__round"></div>
+          <picture>
+            <source
+              srcset="
+                /iTeamChic-IceProject/icecream__mob.8e9afd76.webp    1x,
+                /iTeamChic-IceProject/icecream__mob@2x.9fa99a86.webp 2x,
+                /iTeamChic-IceProject/icecream__mob@3x.dc6d00c3.webp 3x,
+                /iTeamChic-IceProject/icecream__mob.d9d6635a.png     1x,
+                /iTeamChic-IceProject/icecream__mob@2x.a0a33d17.png  2x,
+                /iTeamChic-IceProject/icecream__mob@3x.4b86fb0e.png  3x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /iTeamChic-IceProject/icecream__tablet.c31ee392.png     1x,
+                /iTeamChic-IceProject/icecream__tablet@2x.34377e6c.png  2x,
+                /iTeamChic-IceProject/icecream__tablet@3x.d3bf6fc4.png  3x,
+                /iTeamChic-IceProject/icecream__tablet.e30b341b.webp    1x,
+                /iTeamChic-IceProject/icecream__tablet@2x.408ce3fa.webp 2x,
+                /iTeamChic-IceProject/icecream__tablet@3x.18b7d05d.webp 3x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /iTeamChic-IceProject/icecream__desktop.a14e815f.png     1x,
+                /iTeamChic-IceProject/icecream__desktop@2x.bf4f741b.png  2x,
+                /iTeamChic-IceProject/icecream__desktop@3x.f8a12a8d.png  3x,
+                /iTeamChic-IceProject/icecream__desktop.59118654.webp    1x,
+                /iTeamChic-IceProject/icecream__desktop@2x.80d5949b.webp 2x,
+                /iTeamChic-IceProject/icecream__desktop@3x.55ea7a41.webp 3x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <img
+              class="hero__img"
+              src="/iTeamChic-IceProject/icecream__mob.d9d6635a.png"
+              alt="ice"
+            />
+          </picture>
+          <div class="hero_container_milk">
+            <picture>
+              <source
+                srcset="
+                  /iTeamChic-IceProject/milk__tablet.ddcec7f7.png     1x,
+                  /iTeamChic-IceProject/milk__tablet@2x.0759eed4.png  2x,
+                  /iTeamChic-IceProject/milk__tablet@3x.3a2f2361.png  3x,
+                  /iTeamChic-IceProject/milk__tablet.347948e4.webp    1x,
+                  /iTeamChic-IceProject/milk__tablet@2x.233ab904.webp 2x,
+                  /iTeamChic-IceProject/milk__tablet@3x.cb07d49e.webp 3x
+                "
+                media="(min-width: 768px) and (max-width: 1279px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  /iTeamChic-IceProject/milk__desktop.fc51528e.png     1x,
+                  /iTeamChic-IceProject/milk__desktop@2x.a5529191.png  2x,
+                  /iTeamChic-IceProject/milk__desktop@3x.3328c0ec.png  3x,
+                  /iTeamChic-IceProject/milk__desktop.d4b12298.webp    1x,
+                  /iTeamChic-IceProject/milk__desktop@2x.e8c1dfbb.webp 2x,
+                  /iTeamChic-IceProject/milk__desktop@3x.85c442c6.webp 3x
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <img
+                class="hero__img_milk"
+                src="/iTeamChic-IceProject/milk__tablet.ddcec7f7.png"
+                alt="milk"
+              />
+            </picture>
+            <div class="hero__container_text">
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit,<br />
+                sed do eiusmod tempor <br />
+                incididunt ut labore et
+              </p>
+              <form action="#reviews">
+                <button class="hero__button_arrow">
+                  <svg class="btn-icon-arrow" width="9" height="9">
+                    <use
+                      href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="
+                /iTeamChic-IceProject/tasty__tablet.e138249a.png     1x,
+                /iTeamChic-IceProject/tasty__tablet@2x.e48beff0.png  2x,
+                /iTeamChic-IceProject/tasty__tablet@3x.af7fa026.png  3x,
+                /iTeamChic-IceProject/tasty__tablet.dc982266.webp    1x,
+                /iTeamChic-IceProject/tasty__tablet@2x.2e5e16c6.webp 2x,
+                /iTeamChic-IceProject/tasty__tablet@3x.3068163e.webp 3x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /iTeamChic-IceProject/tasty__desktop.bf99e1fd.png     1x,
+                /iTeamChic-IceProject/tasty__desktop@2x.bac1194d.png  2x,
+                /iTeamChic-IceProject/tasty__desktop@3x.5ee656b5.png  3x,
+                /iTeamChic-IceProject/tasty__desktop.e951e75b.webp    1x,
+                /iTeamChic-IceProject/tasty__desktop@2x.26c9bdb1.webp 2x,
+                /iTeamChic-IceProject/tasty__desktop@3x.42aa2c21.webp 3x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <img
+              class="hero__img_tasty"
+              src="/iTeamChic-IceProject/tasty__tablet.e138249a.png"
+              alt="tasty"
+            />
+          </picture>
+        </div>
+      </section>
+      <!-- <section id="contacts" class="contacts">  -->
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <h1 class="visually-hidden">Information for people</h1>
+          <div class="contact__cards">
+            <div class="contacts__card1">
+              <div class="contacts__front">
+                <ul class="contacts__card-list">
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-name">CAFE</p>
+                    <h2 class="contacts__card-city">Chicago</h2>
+                    <p class="contacts__card-description">
+                      Fusce ut velit laoreet, tempus arcu molestie vulputate
+                    </p>
+                  </li>
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-day">Monday-Friday</p>
+                    <p class="contacts__card-time contacts__card-time1">
+                      06:00 AM - 10:00 PM
+                    </p>
+                    <p class="contacts__card-day">Saturday - Sunday</p>
+                    <p class="contacts__card-time">08:00 AM - 16:00 PM</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__back">
+                <img
+                  class="image__back"
+                  src="/iTeamChic-IceProject/var2.1.d85af87d.jpg"
+                  alt="Pink girl"
+                  width="330px"
+                />
+              </div>
+              <address class="contacts__cafe">
+                <a class="cafe-link" href="tel:+61(0) 383 766 284"
+                  >+61(0) 383 766 284</a
+                >
+                <a class="cafe-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </address>
+            </div>
+            <div class="contacts__card2">
+              <div class="contacts__front">
+                <ul class="contacts__card-list">
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-name2">FOOD TRUCK</p>
+                    <h2 class="contacts__card-city">Los Angeles</h2>
+                    <p class="contacts__card-description">
+                      Fusce ut velit laoreet, tempus arcu molestie vulputate
+                    </p>
+                  </li>
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-day">Monday - Friday</p>
+                    <p class="contacts__card-time contacts__card-time1">
+                      06:00 AM - 1
+                    </p>
+                    <p class="contacts__card-day">Saturday - Sunday</p>
+                    <p class="contacts__card-time">08:00 AM - 16:00 PM</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__back">
+                <img
+                  class="image__back"
+                  src="/iTeamChic-IceProject/var2.2.e17bbf80.jpg"
+                  alt="Truck"
+                />
+              </div>
+              <address class="contacts__cafe">
+                <a class="cafe-link" href="tel:+61(0) 383 766 284"
+                  >+61(0) 383 766 284</a
+                >
+                <a class="cafe-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </address>
+            </div>
+            <div class="contacts__card3">
+              <div class="contacts__front">
+                <ul class="contacts__card-list">
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-name">CAFE</p>
+                    <h2 class="contacts__card-city">New York</h2>
+                    <p class="contacts__card-description">
+                      Fusce ut velit laoreet, tempus arcu molestie vulputate
+                    </p>
+                  </li>
+                  <li class="contacts__card-item">
+                    <p class="contacts__card-day">Monday - Friday</p>
+                    <p class="contacts__card-time contacts__card-time1">
+                      06:00 AM - 10:00 PM
+                    </p>
+                    <p class="contacts__card-day">Saturday - Sunday</p>
+                    <p class="contacts__card-time">08:00 AM - 16:00 PM</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__back">
+                <img
+                  class="image__back"
+                  src="/iTeamChic-IceProject/var2.3.dab19685.jpg"
+                  alt="Violet girl"
+                />
+              </div>
+              <address class="contacts__cafe">
+                <a class="cafe-link" href="tel:+61(0) 383 766 284"
+                  >+61(0) 383 766 284</a
+                >
+                <a class="cafe-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </address>
+            </div>
+          </div>
+          <div class="contacts__buttons">
+            <button
+              type="button"
+              class="button-location"
+              data-ourlocations-open=""
+            >
+              Our Locations
+              <svg class="about__btn-icon-loc" height="10" width="6">
+                <use
+                  href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-further1"
+                ></use>
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="button-franchise"
+              data-franchise-open=""
+            >
+              Franchise
+              <svg class="about__btn-icon-fr" height="10" width="6">
+                <use
+                  href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-further1"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="backdrop__ourlocations is-hidden" data-ourlocations="">
+          <div class="modal__ourlocations">
+            <button class="readmore__close-button" data-ourlocations-close="">
+              <svg height="20" width="20">
+                <use
+                  href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-close-cross"
+                ></use>
+              </svg>
+            </button>
+            <div class="contacts__address">
+              <div class="address__map">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23773.02017480281!2d-87.65961587929299!3d41.85784346271006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc509b14ec835c6af!2sLa%20Michoacana%20Premium!5e0!3m2!1sru!2sua!4v1614100095884!5m2!1sru!2sua"
+                  width="50%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+                <div class="address__conent">
+                  <h2 class="address__town">Chicago</h2>
+                  <li class="address__item">
+                    <p class="address__day">
+                      Monday - Friday
+                      <span class="address__time">06:00 AM - 10:00 PM</span>
+                    </p>
+                    <p class="address__day">
+                      Saturday - Sunday
+                      <span class="address__time">08:00 AM - 16:00 PM</span>
+                    </p>
+                  </li>
+                </div>
+              </div>
+              <div class="address__map">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423967.096327145!2d-118.51064232004634!3d33.883396571177414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae83569fbae3575!2sN&#39;ice%20Cream!5e0!3m2!1sru!2sua!4v1614100369691!5m2!1sru!2sua"
+                  width="50%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+                <div class="address__conent">
+                  <h2 class="address__town">Los Angeles</h2>
+                  <li class="address__item">
+                    <p class="address__day">
+                      Monday - Friday
+                      <span class="address__time">06:00 AM - 10:00 PM</span>
+                    </p>
+                    <p class="address__day">
+                      Saturday - Sunday
+                      <span class="address__time">08:00 AM - 16:00 PM</span>
+                    </p>
+                  </li>
+                </div>
+              </div>
+              <div class="address__map">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96853.51601565567!2d-74.0315301002188!3d40.659151857133345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb17612bccbcc7f0d!2sCarvel!5e0!3m2!1sru!2sua!4v1614100453410!5m2!1sru!2sua"
+                  width="50%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+                <div class="address__conent">
+                  <h2 class="address__town">New York</h2>
+                  <li class="address__item">
+                    <p class="address__day">
+                      Monday - Friday
+                      <span class="address__time">06:00 AM - 10:00 PM</span>
+                    </p>
+                    <p class="address__day">
+                      Saturday - Sunday
+                      <span class="address__time">08:00 AM - 16:00 PM</span>
+                    </p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="backdrop__franchise is-hidden" data-franchise="">
+          <div class="modal__franchise">
+            <button class="readmore__close-button" data-franchise-close="">
+              <svg height="20" width="20">
+                <use
+                  href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-close-cross"
+                ></use>
+              </svg>
+            </button>
+            <a class="logo" href="/iTeamChic-IceProject/index.html">
+              <picture
+                >.
+                <source
+                  srcset="
+                    /iTeamChic-IceProject/logo1.b0025747.png    1x,
+                    /iTeamChic-IceProject/logo1@2x.cb2874f3.png 2x,
+                    /iTeamChic-IceProject/logo1@3x.1c79cc4d.png 3x
+                  "
+                />
+                <img
+                  class="logo__img"
+                  src="/iTeamChic-IceProject/logo1.b0025747.png"
+                  alt="Логотип"
+                /> </picture
+              >Icecream
+            </a>
+            <div class="franchise__comming">
+              <h2 class="franchise__title">Franchise</h2>
+              <p class="franchise__text">page under construction</p>
+              <p class="franchise__timing" id="demo">1</p>
+            </div>
+            <div class="franchise__cont">
+              <address class="contacts__franchise">
+                <p>Contact Us</p>
+                <a class="cafe-link__franchise" href="tel:+61(0) 383 766 284"
+                  >+61(0) 383 766 284</a
+                >
+                <a class="cafe-link__franchise" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </address>
+              <img
+                src="/iTeamChic-IceProject/ice4-big.bd86cc33.jpg"
+                alt="icecream"
+                width="15%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="backdrop backdrop--hidden" data-modal="">
+        <div class="modal" data-modal="">
+          <button class="modal__btn-close" data-modal-close="">
+            <svg width="16" height="16">
+              <use
+                href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <form id="osForm" name="osForm" action="" method="">
+            <div id="result_form" class="form__data">
+              <div class="form">
+                <h2 class="form__title">1 click order</h2>
+                <div class="form__data">
+                  <label class="form__label">
+                    <span>Name</span>
+                    <div class="form__input">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Nick"
+                        required=""
+                      />
+                      <svg class="icon" width="18" height="18">
+                        <use
+                          href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-person"
+                        ></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label for="" class="form__label">
+                    <span>Phone</span>
+                    <div class="form__input">
+                      <input
+                        type="tel"
+                        name="user_tel"
+                        pattern="^\+\d{2}\d{1}\d{3}\d{3}\d{3}$"
+                        required=""
+                        placeholder="+61 0 555 555 555"
+                      />
+                      <svg class="icon" width="18" height="18">
+                        <use
+                          href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-phone"
+                        ></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label class="form__label">
+                    <span>E-mail</span>
+                    <div class="form__input">
+                      <input
+                        type="user_email"
+                        name="email"
+                        placeholder="example@mail.com"
+                        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                      />
+                      <svg class="icon" width="18" height="18">
+                        <use
+                          href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-email"
+                        ></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label for="" class="form__label">
+                    <span>Сomment</span>
+                    <textarea
+                      name="user_comment"
+                      cols="30"
+                      rows="5"
+                      placeholder="Enter text"
+                    ></textarea>
+                  </label>
+                </div>
+                <button class="button__submit" type="submit">Confirm</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a href="" class="scrollup">Наверх</a>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__border">
+          <div class="container">
+            <div class="footer-page">
+              <div class="footer-slohan">
+                <p class="footer__slohan-tittle">HOMEMADE ICE CREAM MADE</p>
+                <p class="footer__saturated">WITH PASSION</p>
+              </div>
+              <div class="footer__contacts-container">
+                <div class="footer-conection">
+                  <ul class="conection-list">
+                    <li class="conection-item">
+                      <a
+                        class="conection-link"
+                        href="https://github.com/"
+                        target="_blank"
+                      >
+                        <svg class="conection-svg" width="18.82" height="18.82">
+                          <use
+                            href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-github-pin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="conection-item">
+                      <a
+                        class="conection-link"
+                        href="https://web.telegram.org/"
+                        target="_blank"
+                      >
+                        <svg class="conection-svg" width="19.2" height="14.93">
+                          <use
+                            href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-telegram-pin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="conection-item">
+                      <a
+                        class="conection-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="conection-svg" width="8.8" height="19.2">
+                          <use
+                            href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-facebook-pin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <span class="conection-icon">
+                    <svg class="conection-svg1" width="20" height="17">
+                      <use
+                        href="/iTeamChic-IceProject/symbol-defs.ce35c826.svg#icon-share"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+                <p class="conection-text">
+                  Feel free to contact
+                  <a class="conection-tel" href="tel:+610383766284"
+                    >+61 (0) 383 766 284</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-titre">© 2021 - IceCream. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="/iTeamChic-IceProject/modal-buy-now.4635d7ab.js"></script>
+    <script src="/iTeamChic-IceProject/menu.9728d9dd.js"></script>
+    <script src="/iTeamChic-IceProject/modal-read-more.efbfeeca.js"></script>
+    <script src="/iTeamChic-IceProject/modal-our-locations.cb73e35b.js"></script>
+    <script src="/iTeamChic-IceProject/modal-franchise.eda5af44.js"></script>
+    <script src="/iTeamChic-IceProject/franchise-add.1de64bc9.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+    <script src="/iTeamChic-IceProject/slider.de1f4cd1.js"></script>
+    <script src="/iTeamChic-IceProject/ajax.cab9fb9d.js"></script>
+    <script src="/iTeamChic-IceProject/scroll.04b9fd99.js"></script>
+    <script src="/iTeamChic-IceProject/src.d3b14c64.js"></script>
+  </body>
+</html>
